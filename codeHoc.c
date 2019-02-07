@@ -364,7 +364,6 @@ void if_code(void){
 	
 	PC=*((instMac**)(adr+2));
 	printf("adr=%p avec %p\n",adr,*((instMac**)(adr)));
-
 };
 
 
@@ -374,7 +373,22 @@ void if_code(void){
  *  \brief      
  */
 void while_code(void){
-
+	instMac* adr=PC; 
+	printf("Execute adr +3 \n");
+	execute(adr+3);
+	
+	data_t condition=pop();
+	
+	if(condition.fValue) {
+		printf("Conditions is ok \n");
+	}
+	else {
+		printf("Conditions is not ok\n");
+        //Loop
+	}
+	
+    printf("Not implemented yet\n");
+    
 };
 
 /******************************************************************************/

@@ -163,12 +163,12 @@ int lineNo = 0;
 int main (int argc, char *argv[])
 {
     progName = argv[0];
-    fprintf(stdout,"\033[30m\033[1mWelcome to the basic calculator.\nImplemented by YOUUUUUU.\nVersion 1.1, Junnary 5, 2019\n\033[0m");
+    fprintf(stdout,"\033[30m\033[1mWelcome to the basic calculator.\nImplemented by Clément MONTOIS (LA3).\nVersion 1.1, Junnary 5, 2019\n\033[0m");
     installDefaultSymbols();
 	printf("Beginning execution\n");
     for (initCode(),prompt(); yyparse(); initCode(),prompt()) execute(baseProg);
 	printf("End execution\n");
-    fprintf(stdout, "logout\nI hope to see you nice !!\n");
+    fprintf(stdout, "\nSee ya !\n");
     exit(EXIT_SUCCESS);
 }
 /*------\\//------\\//------\\//------\\//------\\//------\\//------\\/ F I N */
