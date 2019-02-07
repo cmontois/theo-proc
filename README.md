@@ -18,32 +18,6 @@ Remarque:
 
 ## CHANGELOG
 
-### Version 2.0
-
-Objectif:
-
-Quelle(s) structure(s) est(sont) nécessaire(s) pour 
-supporter l’implémentation des fonctions.
-Apportez les modifications essentielles 
-à l’analyseur syntaxique et à l’interpréteur pour 
-prendre en charge l’implémentation des fonctions. 
-
-### Version 1.7
-
-Objectif:
-
-Affichez le code généré avant son exécution. 
-
-### Version 1.6
-
-Objectif:
-
-
-Modifiez votre interpréteur pour tracer 
-les unités syntaxiques reconnues
-A la génération (compilation du langage), 
-rendez la trace conditionnée par la définition d’un symbole.
-
 ### Version 1.5
 
 Objectif: 
@@ -52,11 +26,6 @@ Objectif:
 Réalisez  les  tests  avec  captures  d’écran de  la  version  1.5 
 (votre) montrant  le  bon fonctionnement des traitements 
 conditionnels & itératifs.
-
-```
-
-```
-
 
 #### If & Else
 
@@ -1020,4 +989,32 @@ hoc>
 
 Opérateur "while" (Not implemented yet)
 ```
+```
+
+### PRINT
+
+Visualisation des constantes, variables et fonctions définies.
+
+```
+hoc> PRINT
+[code()-symb/fct] @PROG=[      0x608dc0] @CODE=[      0x403c7d]
+[code()-symb/fct] @PROG=[      0x608dc8] @CODE=[         (nil)]
+[execute()      ] @INST=[      0x608dc0] INST_=[      0x403c7d] @PILE=[      0x608478]
+Constantes Réelles:
+        PHI     = 1.618034
+        DEG     = 57.29578
+        GAMMA   = 0.57721566
+        E       = 2.7182818
+        PI      = 3.1415927
+Variables Réelles:
+        b       = 3
+        a       = 2
+Constantes Réelles:
+Variables Entières:
+Non définis :
+
+Fonctions prédéfinies :
+        log abs tg cos sin
+[initCode()     ] @PROG=[      0x608dc0] @PILE=[      0x608480]
+hoc>
 ```
