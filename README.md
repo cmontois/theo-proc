@@ -18,6 +18,15 @@ Remarque:
 
 ## CHANGELOG
 
+### Version 1.6
+
+Objectif: 
+
+
+Modifiez votre interpréteur pour tracer les unités syntaxiques reconnues
+A la génération (compilation du langage), rendez la trace conditionnée 
+par la définition d’un symbole.
+
 ### Version 1.5
 
 Objectif: 
